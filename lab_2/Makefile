@@ -4,16 +4,24 @@ all: install test run deploy
 
 install:
 	@echo "Installing pipenv and dependencies."
-	# Ваш код тут
+	cd ~/Documents/GitLabs/lab_2
+	sudo -H pip3 install -U pipenv
+	pipenv --python 3.6
+	pipenv shell
+	pipenv install requests
+	pipenv install ntplib
+	pipenv install pytest
 
 test:
 	@echo "Start tests."
-	# Ваш код тут
+	pytest tests/tests.py > results.txt
 
 run:
 	@echo "Run Python app."
-	# Ваш код тут
+	python app.py >> results.txt
 
 deploy:
 	@echo "Adding and Committing results.txt to git."
-	# Ваш код тут
+	git add results.txt
+	git commit -m "Lab2 commit file 'results.txt'"
+	git push
