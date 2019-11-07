@@ -21,7 +21,7 @@ pipenv run python manage.py startapp main
 6. Щоб поєднати функції з URL шляхами заповнив файл main/urls.py.
 7. Запустив сервер.
    Головна сторінка:  
-![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/main_page.png)
+![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/main_page.PNG)
    Сторінка health:  
 ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/health.png)
    Виконав коміт сайту.
