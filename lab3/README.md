@@ -1,27 +1,27 @@
-1. Ініціалізував середовище pipenv та встановив необхідні пакети:  
+п»ї1. Р†РЅС–С†С–Р°Р»С–Р·СѓРІР°РІ СЃРµСЂРµРґРѕРІРёС‰Рµ pipenv С‚Р° РІСЃС‚Р°РЅРѕРІРёРІ РЅРµРѕР±С…С–РґРЅС– РїР°РєРµС‚Рё:  
 ```bash
 pipenv --python 3.7
 pipenv install django
 ```
-2. За допомогою Django Framework створив заготовку мого проекту my_site.
+2. Р—Р° РґРѕРїРѕРјРѕРіРѕСЋ Django Framework СЃС‚РІРѕСЂРёРІ Р·Р°РіРѕС‚РѕРІРєСѓ РјРѕРіРѕ РїСЂРѕРµРєС‚Сѓ my_site.
 ```bash
 pipenv run django-admin startproject my_site
 ```
-3. Запустив Django сервер.
+3. Р—Р°РїСѓСЃС‚РёРІ Django СЃРµСЂРІРµСЂ.
 ```bash
 pipenv run python manage.py runserver
 ```
-   У браузері ввів ІР-адресу 127.0.0.1:8000.  
+   РЈ Р±СЂР°СѓР·РµСЂС– РІРІС–РІ Р†Р -Р°РґСЂРµСЃСѓ 127.0.0.1:8000.  
 ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/django_server.png)
-4. Створив темплейт мого додатку (main).
+4. РЎС‚РІРѕСЂРёРІ С‚РµРјРїР»РµР№С‚ РјРѕРіРѕ РґРѕРґР°С‚РєСѓ (main).
 ```bash
 pipenv run python manage.py startapp main
 ```
-5. Відредагував файли my_site/settings.py та my_site/urls.py.
-6. Щоб поєднати функції з URL шляхами заповнив файл main/urls.py.
-7. Запустив сервер.
-   Головна сторінка:  
+5. Р’С–РґСЂРµРґР°РіСѓРІР°РІ С„Р°Р№Р»Рё my_site/settings.py С‚Р° my_site/urls.py.
+6. Р©РѕР± РїРѕС”РґРЅР°С‚Рё С„СѓРЅРєС†С–С— Р· URL С€Р»СЏС…Р°РјРё Р·Р°РїРѕРІРЅРёРІ С„Р°Р№Р» main/urls.py.
+7. Р—Р°РїСѓСЃС‚РёРІ СЃРµСЂРІРµСЂ.
+   Р“РѕР»РѕРІРЅР° СЃС‚РѕСЂС–РЅРєР°:  
 ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/main_page.PNG)
-   Сторінка health:  
+   РЎС‚РѕСЂС–РЅРєР° health:  
 ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/health.png)
-   Виконав коміт сайту.
+   Р’РёРєРѕРЅР°РІ РєРѕРјС–С‚ СЃР°Р№С‚Сѓ.
