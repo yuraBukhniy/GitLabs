@@ -12,7 +12,7 @@ pipenv run django-admin startproject my_site
 pipenv run python manage.py runserver
 ```
    У браузері ввів ІР-адресу 127.0.0.1:8000.  
-![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/django_server.png)
+![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/django_server.png)  
    4. Створив темплейт мого додатку (main).
 ```bash
 pipenv run python manage.py startapp main
@@ -26,9 +26,9 @@ pipenv run python manage.py startapp main
 ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/health.png)
    Виконав коміт сайту.
 8. Встановив бібліотеку requests.
-9. Модифікував функцію health на виведення необхідних даних. 
-   Додав обробку винятку, якщо сторінка буде недоступною, використавши функцію logging.error().
-   Зробив так, щоб запит виконувався раз в хвилину за допомогою функції time.sleep().
+9. Модифікував функцію health на виведення необхідних даних.  
+   Додав обробку винятку, якщо сторінка буде недоступною, використавши функцію logging.error().  
+   Зробив так, щоб запит виконувався раз в хвилину за допомогою функції time.sleep().  
    Додав аліас на запуск сервера та моніторингу. Для цього додав секцію scripts у Pipfile, де прописав швидкі виклики команд.
 10. Запустив сервер та моніторинг.
 ```bash
