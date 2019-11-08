@@ -25,3 +25,16 @@ pipenv run python manage.py startapp main
    Сторінка health:  
 ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/health.png)
    Виконав коміт сайту.
+8. Встановив бібліотеку requests.
+9. Модифікував функцію health на виведення необхідних даних. 
+   Додав обробку винятку, якщо сторінка буде недоступною, використавши функцію logging.error().
+   Зробив так, щоб запит виконувався раз в хвилину за допомогою функції time.sleep().
+   Додав аліас на запуск сервера та моніторингу. Для цього додав секцію scripts у Pipfile, де прописав швидкі виклики команд.
+10. Запустив сервер та моніторинг.
+```bash
+pipenv run server
+pipenv run monitoring
+```
+![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/health_final.png)
+   Під час моніторингу створив ситуацію, при якій моя веб-сторінка стала недоступною. Повідомлення про помилку записане в файлі логів server.logs.
+![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/error.png)
