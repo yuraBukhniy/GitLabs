@@ -12,7 +12,7 @@ pipenv run django-admin startproject my_site
 pipenv run python manage.py runserver
 ```
    У браузері ввів ІР-адресу 127.0.0.1:8000.  
-![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/django_server.png)  
+![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab3/images/django_server.png)
 4. Створив темплейт мого додатку (main).
 ```bash
 pipenv run python manage.py startapp main
