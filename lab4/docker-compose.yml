@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: yuriy9898/lab4:compose-app
+    container_name: compose-app
+    ports:
+      - 8000:8000
+
+  monitoring:
+    build:
+      context: .
+      dockerfile: Dockerfile_monitoring
+    image: yuriy9898/lab4:compose-monitoring
+    container_name: compose-monitoring
+    network_mode: "host"
+
