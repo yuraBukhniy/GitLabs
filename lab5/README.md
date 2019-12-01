@@ -21,11 +21,11 @@
 3. Використовуючи команду `make` створив Docker імеджі для додатку (`sudo make app`) та для тестів (`sudo make tests`). Запустив додаток:
     ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img4.png)
     Запустив тести.
-    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img5.png)
-    Перевірив роботу веб-сайту.
-    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img6.png)
-    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img7.png)
-    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img8.png)
+    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img5.png)  
+    Перевірив роботу веб-сайту.  
+    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img6.png)  
+    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img7.png)  
+    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img8.png)  
 4. Зупинив проект натиснувши `Ctrl+C` та почистив всі ресурси Docker за допомогою команди `sudo make docker-prune`.
 5. Створив директиву в `Makefile` для завантаження створених імеджів у Docker Hub репозиторій. Завантажив імеджі до свого репозиторію;
     ```bash
@@ -47,10 +47,10 @@
     docker-compose -p lab5 up
     ```
     Перед запуском змінив репозиторій у тегах, прописаних у `docker-compose.yml`, на власний.  
-9. Веб-сайт працює:
+9. Веб-сайт працює:  
     ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img12.png)
     ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img13.png)
-    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img14.png)
+    ![alt text](https://github.com/yuraBukhniy/GitLabs/blob/master/lab5/img/img14.png)  
     Щоб відкрити сайт треба ввести інший номер порта - 80. Він прописаний у файлі `docker-compose.yml`. Хоча можна і зовсім не вводити номер порта, ввівши лише адресу `0.0.0.0`, оскільки 80 - номер порта для HTTP протоколу.
 10. Зупинив проект і почистив ресурси створені компоуз `docker-compose down`;
 11. Завантажив створені імеджі до Docker Hub репозиторію за допомого команди `sudo docker-compose push`.
