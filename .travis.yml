@@ -9,7 +9,7 @@ jobs:
       name: "Run tests for Lab 2"
       python: 3.7
       install:
-        - cd ./lab2/
+        - cd ./lab_2/
         - pipenv install
       script: pipenv run pytest tests/tests.py || true
     - stage: "Build Lab 3."
