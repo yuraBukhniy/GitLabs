@@ -7,9 +7,9 @@ $(STATES):
 	@docker build -f Dockerfile.$(@) -t $(REPO):$(@) .
 
 run:
-	@docker network create --driver=bridge appnet \
+	@(docker network create --driver=bridge appnet || true) \
 	&& docker run --rm --name redis --net=appnet -d redis \
-	&& docker run --rm -it --name app --net=appnet -p 5000:5000 $(REPO):app
+	&& docker run --rm -it --name app --net=appnet -d -p 5000:5000 $(REPO):app
 
 test-app:
 	@docker run --rm -it --name test --net=appnet $(REPO):tests

@@ -30,8 +30,10 @@ jobs:
       install:
         - cd ./lab4/
       script:
-        - docker build -t yuriy9898/lab4:django .
+        - docker build -t yuriy9898/lab4:django-travis .
         - docker images
+        - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        - docker push yuriy9898/lab4:django-travis
     - stage: "Build Lab 5."
       name: "Build and run Docker images via make"
       services:
