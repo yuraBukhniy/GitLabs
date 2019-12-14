@@ -14,9 +14,8 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 def run():
-    while True:
-        main("http://localhost:8000/health")
-        time.sleep(60)
+    main("http://localhost:8000/health")
+    time.sleep(60)
 
 def main(url):
     try:

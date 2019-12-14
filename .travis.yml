@@ -12,6 +12,13 @@ jobs:
         - cd ./lab_2/
         - pipenv install
       script: pipenv run pytest tests/tests.py || true
+    - stage: "Build Lab 3."
+      name: "Run Djungo Server and test it accessibility. Fail to run and test"
+      python: 3.7
+      install:
+        - cd ./lab3/
+        - pipenv install
+      script: ./scripts/travis-build.sh
     - stage: "Build Lab 4."
       name: "Build Docker images & Home task"
       services:
