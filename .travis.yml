@@ -17,7 +17,8 @@ jobs:
       python: 3.7
       install:
         - cd ./lab3/
-        - pipenv install
+        - pipenv install requests
+        - pipenv install django
       script:
         - set -ev
         - nohup pipenv run server > ./ci-build.log &
